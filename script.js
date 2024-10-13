@@ -1,15 +1,15 @@
-// Full-fledged JavaScript for handling form submission and animations
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the default form submission
 
-    // Get input values
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+   
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    // Basic validation
+    
     if (name && email && message) {
-        // Create a modal to confirm message submission
+       
         const modal = document.createElement('div');
         modal.classList.add('modal');
         modal.innerHTML = `
@@ -21,12 +21,11 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         `;
         document.body.appendChild(modal);
         
-        // Close modal event
         modal.querySelector('.close-btn').addEventListener('click', function() {
             modal.remove();
         });
         
-        // Reset the form fields
+       
         this.reset();
     } else {
         alert("Please fill out all fields.");
