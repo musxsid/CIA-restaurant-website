@@ -20,7 +20,7 @@ Installation
 Clone the Repository
 Clone this repository to your local machine with a command like:
 
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/musxsid/CIA-restaurant-website.git
 
 Open the Project
 Navigate to the project folder and open the index.html file in a web browser:
